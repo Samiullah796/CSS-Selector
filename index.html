@@ -18,19 +18,56 @@
             background-color: green;
         }
         /* Child Selector */
-        div > p{
+        /* div > p{
             color:aqua;
             background-color: brown;
+        } */
+        /* Descendent Selector */
+        div p{
+            color: burlywood;
+            background-color: black;
+        }
+        /* Universal Selector */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: rgb(43, 226, 95);
+        }
+        a:link{
+            color: black;
+        }
+        a:active{
+         background-color: blueviolet;
+        }
+        a:hover{
+            background-color: blue;
+        }
+        p:first-child{
+            background-color: aqua;
         }
     </style>
 </head>
 <body>
     <div class="blue">
         I am a div
+    <main class="one">
+        <p>I am One</p>
+        <p>I am Second</p>
+    </main>
+        <article>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quod.</p>
+
+    </article>    
     </div>
     <div id="green">
         I am Another div
     </div>
+    <a href="https://www.google.com">go to Google</a>
+    <a href="https://www.facebook.com">go to Facebook</a>
 </body>
 </html>
